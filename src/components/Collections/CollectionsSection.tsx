@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 import CustomButton from "../Buttons/CustomButton";
 
@@ -21,6 +22,23 @@ const featured = [
 ];
 
 const CollectionsSection = () => {
+  const [time, setTime] = React.useState(4394);
+
+  React.useEffect(() => {
+    const intervalId = setInterval(() => {
+      setTime((prevTime) => prevTime - 1);
+    }, 1000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
+  const formatTime = () => {
+    const hours = Math.floor(time / 3600);
+    const minutes = Math.floor((time % 3600) / 60);
+    const seconds = time % 60;
+
+    return `${hours}h ${minutes}m ${seconds}s`;
+  };
   return (
     <StyledCollections className="my-container">
       <div className="py-14">
@@ -68,7 +86,9 @@ const CollectionsSection = () => {
                   </div>
                   <div>
                     <p className="text-[#6B6B6B] text-[12px] mb-1">End in</p>
-                    <p className="text-[14px] font-[500]">1h 12m 14s</p>
+                    <p className="text-[14px] font-[500] w-[83px]">
+                      {formatTime()}
+                    </p>
                   </div>
                 </div>
                 <CustomButton fullWidth={true} text="Place Bid" />
