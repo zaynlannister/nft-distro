@@ -7,21 +7,21 @@ const nfts = [
     img: "2",
     author: "Richard ",
     authorImg: "2",
-    price: "3.421",
+    price: "7.421",
   },
   {
     name: "ExBoot #2",
     img: "3",
     author: "Richard ",
     authorImg: "1",
-    price: "3.421",
+    price: "4.176",
   },
   {
     name: "ExBoot #2",
     img: "4",
     author: "Richard ",
     authorImg: "2",
-    price: "3.421",
+    price: "3.111",
   },
 ];
 

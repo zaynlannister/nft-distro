@@ -1,3 +1,4 @@
+import CollectionsSection from "./components/Collections/CollectionsSection";
 import HeaderSection from "./components/Header/HeaderSection";
 import TrendingSection from "./components/Trending/TrendingSection";
 
@@ -9,6 +10,9 @@ const App = () => {
       </>
       <>
         <TrendingSection />
+      </>
+      <>
+        <CollectionsSection />
       </>
     </div>
   );
