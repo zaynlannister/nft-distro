@@ -42,12 +42,16 @@ const CollectionsSection = () => {
   return (
     <StyledCollections className="my-container">
       <div className="py-14">
-        <p className="collection-title text-[35px] font-[600] pb-14">
+        <p
+          data-aos="fade-right"
+          className="collection-title text-[35px] font-[600] pb-14"
+        >
           Featured Collections
         </p>
         <div className="collection-content flex justify-between gap-8">
           {featured.map((item, index) => (
             <div
+              data-aos="fade-up"
               className="bg-[#1F1F1F] flex items-center p-4 gap-4 rounded-[14px]"
               key={index}
             >

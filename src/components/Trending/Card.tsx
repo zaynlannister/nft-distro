@@ -1,8 +1,19 @@
 import styled from "styled-components";
 
-const Card = (props: any) => {
+interface ICard {
+  name: string;
+  img: string;
+  author: string;
+  authorImg: string;
+  price: string;
+}
+
+const Card = (props: ICard) => {
   return (
-    <StyledTrendingCard className="trending-card bg-[#1F1F1F] p-2 rounded-[10px]">
+    <StyledTrendingCard
+      data-aos="fade-left"
+      className="trending-card bg-[#1F1F1F] p-2 rounded-[10px]"
+    >
       <img
         className="trendig-card__img"
         src={`/img/trending/tending_${props.img}.png`}

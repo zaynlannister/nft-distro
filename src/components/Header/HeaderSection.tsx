@@ -7,7 +7,10 @@ const HeaderSection = () => {
   return (
     <StyledHeader className="bg-[#1F1F1F]">
       <div className="my-container">
-        <div className="header py-4 flex justify-between items-center">
+        <div
+          data-aos="fade-down"
+          className="header py-4 flex justify-between items-center"
+        >
           <div className="flex gap-12 items-center">
             <Logo />
             <CustomInput placeholder="Search" />
@@ -19,7 +22,7 @@ const HeaderSection = () => {
           </div>
         </div>
         <div className="header-content flex justify-between items-center gap-6 py-16">
-          <div>
+          <div data-aos="fade-right">
             <p className="header-text-1 p-[#F4F4F4] text-[13px] tracking-widest">
               WEB 3 NON-FUNGIBLE TOKENS
             </p>
@@ -32,7 +35,7 @@ const HeaderSection = () => {
             </p>
             <CustomButton text="Coonect Wallet" />
           </div>
-          <div>
+          <div data-aos="fade-left">
             <img
               className="header-content__img"
               width="400px"

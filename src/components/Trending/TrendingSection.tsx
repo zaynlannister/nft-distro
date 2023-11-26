@@ -29,7 +29,10 @@ const TrendingSection = () => {
   return (
     <StyledTrendingSection className="my-container">
       <div className="py-14">
-        <p className="trending-title text-[35px] font-[600] pb-14">
+        <p
+          data-aos="fade-right"
+          className="trending-title text-[35px] font-[600] pb-14"
+        >
           Trending Art 🔥
         </p>
         <div className="trending-cards flex gap-8 flex-wrap justify-center">
