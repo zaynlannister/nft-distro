@@ -12,6 +12,7 @@ body {
   font-family: "Clash Display", sans-serif, Arial, Helvetica;
   background-color: #000;
   color: #fff;
+  overflow-x: hidden;
 }
 
 .my-container {
