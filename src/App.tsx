@@ -1,7 +1,11 @@
+import HeaderSection from "./components/Header/HeaderSection";
+
 const App = () => {
   return (
     <div>
-      <div className="my-container">test</div>
+      <>
+        <HeaderSection />
+      </>
     </div>
   );
 };
